@@ -20,7 +20,7 @@ def sanitize_filename(topic: str) -> str:
 
 def run_blog(channel_url: str, topic: str) -> str:
     """Run the async crew.blog() coroutine from within Streamlit's sync context."""
-    return asyncio.run(blog(channel_url, topic))
+    return blog(channel_url, topic)
 
 
 st.set_page_config(
